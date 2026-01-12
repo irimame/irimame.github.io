@@ -22,7 +22,7 @@ tags: [Hugo]
 
 ### Hugo のインストール
 
-`apt install` 等してもよいですがバージョンが古いため、今回は[リリースページ](https://github.com/gohugoio/hugo/releases/)から最新版 (執筆時点では v0.154.4) の `.deb` をダウンロードしてきてインストールする方法をとりました。バージョン違いやアーキテクチャ違い (arm64) は適宜読み替えてください。
+`apt install` 等してもよいですがバージョンが古いため、今回は[リリースページ](https://github.com/gohugoio/hugo/releases/)から最新版 (執筆時点では v0.154.4) の `.deb` をダウンロードしてきてインストールする方法をとりました。バージョン違いやアーキテクチャ違い (arm64 など) は適宜読み替えてください。
 
 Hugo には通常版と extended 版がありますが、必要な機能の都合上 extended 版を選択します。
 
@@ -50,7 +50,7 @@ git init
 git submodule add https://github.com/CaiJimmy/hugo-theme-stack/ themes/hugo-theme-stack
 ```
 
-テーマの中に設定ファイルやコンテンツの例があるので、それを `<sitename>` にコピーします。ただし、のちの便宜のために `hugo.yaml` は `config.yaml` にリネームしておきます (そのままにしておくと、後の作業で異なるディレクトリに `hugo.yaml` という名前のファイルが現れるのが気になったための措置であり、必須ではありません)。
+テーマの中に設定ファイルやコンテンツの例があるので、それを `<sitename>` にコピーします。ただし、のちの便宜のために `hugo.yaml` は `config.yaml` にリネームしておきます (後の作業で異なるディレクトリに `hugo.yaml` ファイルが現れるため紛らわしいと思ったが故の措置であり、必須ではありません)。
 また、元々存在していた `hugo.toml` は不要なので削除します。
 
 ```bash
@@ -83,11 +83,11 @@ hugo new content content/posts/my-first-post.md
 
 その後、ビルドを行い、`localhost:1313` からサーバーにアクセスし、作成した記事が適切に生成されていることを確認します。
 
-ここまでの作業が終わったら、 git commit と Github リポジトリへの push を行ってもよいかもしれません。
-
 ```bash
 hugo server
 ```
+
+ここまでの作業が終わったら、 git commit と Github リポジトリへの push を行ってもよいかもしれません。
 
 ### Github Pages にデプロイする
 
