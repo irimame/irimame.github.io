@@ -2,7 +2,6 @@ baseurl: https://irimame.github.io/
 languageCode: en-us
 theme: hugo-theme-stack
 title: irimame
-#copyright: Example Person
 
 # Theme i18n support
 # Available values: ar, bn, ca, de, el, en, es, fr, hu, id, it, ja, ko, nl, pt-br, th, uk, zh-cn, zh-hk, zh-tw
@@ -11,46 +10,6 @@ DefaultContentLanguage: en
 # Set hasCJKLanguage to true if DefaultContentLanguage is in [zh-cn ja ko]
 # This will make .Summary and .WordCount behave correctly for CJK languages.
 hasCJKLanguage: false
-
-#languages:
-#    en:
-#        languageName: English
-#        title: Example Site
-#        weight: 1
-#        params:
-#            sidebar:
-#                subtitle: Example description
-#    zh-cn:
-#        languageName: 简体中文
-#        title: 演示站点
-#        weight: 2
-#        params:
-#            sidebar:
-#                subtitle: 演示说明
-#
-#    zh-tw:
-#        languageName: 正體中文
-#        title: 演示站點
-#        weight: 2
-#        params:
-#            sidebar:
-#                subtitle: 演示說明
-#
-#    ja:
-#        languageName: 日本語
-#        title: サンプルサイト
-#        weight: 2
-#        params:
-#            sidebar:
-#                subtitle: サンプル説明
-#    ar:
-#        languageName: عربي
-#        languagedirection: rtl
-#        title: موقع تجريبي
-#        weight: 3
-#        params:
-#            sidebar:
-#                subtitle: وصف تجريبي
 
 services:
     # Change it to your Disqus shortname before using
@@ -72,7 +31,7 @@ params:
         - post
     featuredImageField: image
     rssFullContent: true
-    favicon: # e.g.: favicon placed in `static/favicon.ico` of your site folder, then set this field to `/favicon.ico` (`/` is necessary)
+    favicon: /img/favicon.ico # e.g.: favicon placed in `static/favicon.ico` of your site folder, then set this field to `/favicon.ico` (`/` is necessary)
 
     footer:
         since: 2026
@@ -87,8 +46,8 @@ params:
         subtitle: Have a nice day!
         avatar:
             enabled: true
-            local: true
-            src: img/avatar.png
+            local: false
+            src: /img/avatar.png
 
     article:
         math: true
@@ -209,7 +168,7 @@ params:
         opengraph:
             enabled: true
             local: false
-            src:
+            src: img/avatar.png
 
     colorScheme:
         # Display toggle
