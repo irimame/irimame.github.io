@@ -63,9 +63,9 @@ mv ./hugo.yaml ./config.yaml
 rm ./hugo.toml
 ```
 
-### `hugo.yaml` の編集
+### `config.yaml` の編集
 
-[こちらの記事](https://miiitomi.github.io/p/hugo/) の config の節を参考に、 `hugo.yaml` を編集します。
+[こちらの記事](https://miiitomi.github.io/p/hugo/) の config の節を参考に、 `config.yaml` を編集します。
 
 ### コンテンツの整理と初期設定
 
@@ -89,7 +89,7 @@ hugo server
 
 ここまでの作業が終わったら、 git commit と Github リポジトリへの push を行ってもよいかもしれません。
 
-### Github Pages にデプロイする
+### Github Pages へのデプロイ
 
 Github Pages にデプロイするために、従来はブランチを利用する方法 (サードパーティの `peaceiris/actions-hugo` や `peaceiris/actions-gh-pages` を利用する方法) が用いられていたようですが、ここでは Github Actions (`actions/upload-pages-artifact` や `actions/deploy-pages`) を用いたデプロイを行います。
 
