@@ -31,7 +31,7 @@ params:
         - post
     featuredImageField: image
     rssFullContent: true
-    favicon: /img/favicon.ico # e.g.: favicon placed in `static/favicon.ico` of your site folder, then set this field to `/favicon.ico` (`/` is necessary)
+    favicon: /img/favicon.ico
 
     footer:
         since: 2026
@@ -42,7 +42,7 @@ params:
         lastUpdated: Jan 02, 2006
 
     sidebar:
-        emoji: 🍥
+        emoji:
         subtitle: Have a nice day!
         avatar:
             enabled: true
