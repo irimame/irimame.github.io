@@ -43,7 +43,7 @@ params:
 
     sidebar:
         emoji:
-        subtitle: Have a nice day!
+        subtitle: 🧑‍💻🤝🦀
         avatar:
             enabled: true
             local: false
